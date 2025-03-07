@@ -1,9 +1,11 @@
 'use client';
 
-import { faBars, faMoon, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useState } from 'react';
+
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +21,7 @@ const Navbar = () => {
     { name: 'Publications', href: '/publications' },
     { name: 'Privacy', href: '/privacy' },
     { name: 'About', href: '/about' },
-    { name: 'Wiki', href: '/wiki' },
+    { name: 'Wiki', href: 'https://github.com/monal-im/Monal/wiki' },
     { name: 'Search', href: '/search' },
   ];
 
@@ -35,14 +37,7 @@ const Navbar = () => {
           >
             Monal
           </Link>
-          <button
-            id="theme-toggle"
-            accessKey="t"
-            title="(Alt + T)"
-            className="rounded-full px-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-2xl"
-          >
-            <FontAwesomeIcon icon={faMoon} height={24} className="text-blue-500" />
-          </button>
+          <ThemeToggle />
         </div>
         <button className="md:hidden p-2" onClick={toggleMenu}>
           <FontAwesomeIcon
@@ -55,23 +50,52 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center space-x-6">
           {navigation.map((item, index) => (
             <li key={index}>
-              <Link href={item.href} title={item.name} className="hover:text-blue-500">
-                {item.name}
-              </Link>
+              {item.href.startsWith('https') ? (
+                <a
+                  href={item.href}
+                  title={item.name}
+                  className="hover:text-blue-500 dark:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  href={item.href}
+                  title={item.name}
+                  className="hover:text-blue-500 dark:text-white"
+                >
+                  {item.name}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
+
         {isMenuOpen && (
           <ul className="absolute left-0 top-full w-full bg-white dark:bg-gray-800 shadow-md md:hidden flex flex-col space-y-4 p-4">
             {navigation.map((item, index) => (
               <li key={index} onClick={() => setIsMenuOpen(false)}>
-                <Link
-                  href={item.href}
-                  title={item.name}
-                  className="block p-2 hover:bg-gray-200 dark:hover:bg-gray-700"
-                >
-                  {item.name}
-                </Link>
+                {item.href.startsWith('https') ? (
+                  <a
+                    href={item.href}
+                    title={item.name}
+                    className="block p-2 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    href={item.href}
+                    title={item.name}
+                    className="block p-2 hover:bg-gray-200 dark:hover:bg-gray-700"
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

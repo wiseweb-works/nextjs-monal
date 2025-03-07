@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 p-4 mt-auto">
-      <div className="container mx-auto text-center text-sm text-gray-600 dark:text-gray-400">
+      <div className="container mx-auto text-center text-sm text-gray-600 dark:text-white">
         <span>
           &copy; 2025{' '}
           <Link href="/" className="hover:text-blue-500">
@@ -14,7 +14,7 @@ const Footer = () => {
         <span>
           Powered by{' '}
           <a
-            href="https://gohugo.io/"
+            href="https://nextjs.org/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500"
@@ -23,7 +23,7 @@ const Footer = () => {
           </a>{' '}
           &{' '}
           <a
-            href="https://github.com/adityatelange/hugo-PaperMod/"
+            href="https://react.dev/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500"
