@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 const MainArticle = () => {
   return (
-    <article className="max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4 text-center">Monal-IM. Privacy like it&apos;s 1999</h1>
-      <div className="prose dark:prose-dark text-center">
-        <p className="text-justify">
+    <article className="max-w-3xl mx-auto mb-20">
+      <h1 className="text-5xl font-bold mb-4 text-center">Monal-IM. Privacy like it&apos;s 1999</h1>
+      <div className="prose dark:prose-dark text-justify text-lg">
+        <p>
           Monal is an XMPP instant messaging client for macOS and iOS which strives to be the go-to
           client for these platforms just like the app Conversations IM is for Android. XMPP in
           general is an open and standardized protocol for real time communication. Anyone can host
@@ -61,8 +61,8 @@ const MainArticle = () => {
         </div>
       </div>
       <h1 className="text-3xl font-bold m-4 text-center">Designed for iOS and Mac</h1>
-      <div className="prose dark:prose-dark text-center">
-        <p className="text-justify">
+      <div className="prose dark:prose-dark text-justify text-lg my-4">
+        <p>
           Things look and work the way you expect. iOS, iPadOS or macOS, there is a version of Monal
           for you.
         </p>
@@ -95,8 +95,8 @@ const MainArticle = () => {
           </div>
         </div>
       </div>
-      <div className="prose dark:prose-dark text-center m-4">
-        <p className="text-justify">
+      <div className="prose dark:prose-dark text-justify text-lg">
+        <p className="my-4">
           Monal is developed under an open-source BSD license that serves the user, while not
           selling or tracking information for external parties (nor for anyone else). This app
           exists because it is key to ensure usability on all platforms and within the XMPP network

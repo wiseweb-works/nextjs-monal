@@ -19,7 +19,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:text-blue-500"
           >
-            Nextjs
+            <u>Nextjs</u>
           </a>{' '}
           &{' '}
           <a
@@ -28,7 +28,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:text-blue-500"
           >
-            React
+            <u>React</u>
           </a>
         </span>
       </div>

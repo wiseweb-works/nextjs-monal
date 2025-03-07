@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Profile = () => {
   return (
-    <section className="flex flex-col items-center mx-auto justify-center text-center mb-8 min-h-full h-[80dvh] max-w-3xl">
+    <section className="max-w-3xl mx-auto flex flex-col items-center justify-center mb-8 min-h-[calc(100dvh-18rem)] my-20">
       <Image
         src="/logo.png"
         width={120}
@@ -18,7 +18,7 @@ const Profile = () => {
       <h1 className="text-3xl font-bold mt-4">Monal IM</h1>
       <span className="text-gray-600 dark:text-gray-300">iOS and macOS XMPP Chat-Client</span>
 
-      <div className="flex gap-4 mt-4">
+      <div className="flex gap-4 mt-4 text-4xl">
         <a
           href="https://github.com/monal-im/monal"
           target="_blank"
@@ -26,7 +26,7 @@ const Profile = () => {
           title="Github"
           className="hover:text-blue-500"
         >
-          <FontAwesomeIcon icon={faGithub} width={32} />
+          <FontAwesomeIcon icon={faGithub} height={32} />
         </a>
         <a
           href="https://github.com/monal-im/monal"
@@ -35,7 +35,7 @@ const Profile = () => {
           title="Github"
           className="hover:text-blue-500"
         >
-          <FontAwesomeIcon icon={faEnvelope} width={32} />
+          <FontAwesomeIcon icon={faEnvelope} height={32} />
         </a>
         <a
           href="https://github.com/monal-im/monal"
@@ -44,7 +44,7 @@ const Profile = () => {
           title="Github"
           className="hover:text-blue-500"
         >
-          <FontAwesomeIcon icon={faHandHoldingDollar} width={32} />
+          <FontAwesomeIcon icon={faHandHoldingDollar} height={32} />
         </a>
         <a
           href="https://github.com/monal-im/monal"
@@ -53,7 +53,7 @@ const Profile = () => {
           title="Github"
           className="hover:text-blue-500"
         >
-          <FontAwesomeIcon icon={faMastodon} width={32} />
+          <FontAwesomeIcon icon={faMastodon} height={32} />
         </a>
         <a
           href="https://github.com/monal-im/monal"
@@ -62,7 +62,7 @@ const Profile = () => {
           title="Github"
           className="hover:text-blue-500"
         >
-          <FontAwesomeIcon icon={faSquareRss} width={32} />
+          <FontAwesomeIcon icon={faSquareRss} height={32} />
         </a>
       </div>
 
