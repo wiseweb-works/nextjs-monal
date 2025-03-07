@@ -32,6 +32,14 @@ const eslintConfig = async () => {
         'unused-imports/no-unused-imports': 'error',
         'security/detect-object-injection': 'warn',
         'react/react-in-jsx-scope': 'off',
+        'no-console': 'warn',
+        'no-warning-comments': [
+          'warn',
+          {
+            terms: ['TODO', 'FIXME'],
+            location: 'anywhere',
+          },
+        ],
       },
       ignores: ['node_modules', '.next', 'dist', 'public'],
     },

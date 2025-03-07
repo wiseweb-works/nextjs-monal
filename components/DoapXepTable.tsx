@@ -4,9 +4,12 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { parseStringPromise } from 'xml2js';
 
+import type { ApiResponse, Implements, XepItem } from '../types/xepTypes';
+
 const DoapXepTable = () => {
   const [xepData, setXepData] = useState<XepItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -17,11 +20,11 @@ const DoapXepTable = () => {
 
         const response = await axios.get(doapUrl);
         const result: ApiResponse = await parseStringPromise(response.data);
-        const implementations = result['rdf:RDF'].Project[0].implements || [];
+        const implementations = result['rdf:RDF'].Project[0].implements || ([] as Implements[]);
 
         const xeps: XepItem[] = implementations
           .filter((impl) => impl['xmpp:SupportedXep'])
-          .flatMap((impl) => impl['xmpp:SupportedXep'])
+          .flatMap((impl) => impl['xmpp:SupportedXep'] || [])
           .map((xep) => ({
             id: (() => {
               const resource = xep['xmpp:xep']?.[0]?.['$']?.['rdf:resource'];
@@ -39,7 +42,7 @@ const DoapXepTable = () => {
 
         setXepData(xeps);
       } catch {
-        setError('Veri alınırken hata oluştu.');
+        setError('Error receiving data.');
       } finally {
         setLoading(false);
       }
@@ -48,7 +51,7 @@ const DoapXepTable = () => {
     fetchData();
   }, []);
 
-  if (loading) return <p>Yükleniyor...</p>;
+  if (loading) return <p>Loading...</p>;
   if (error) return <p className="text-red-500">{error}</p>;
 
   return (
@@ -86,7 +89,7 @@ const DoapXepTable = () => {
           ) : (
             <tr>
               <td colSpan={3} className="px-4 py-2 border text-center">
-                Veri bulunamadı
+                No data found
               </td>
             </tr>
           )}
@@ -116,7 +119,7 @@ const DoapXepTable = () => {
           ) : (
             <tr>
               <td colSpan={3} className="px-4 py-2 border text-center">
-                Veri bulunamadı
+                No data found
               </td>
             </tr>
           )}
