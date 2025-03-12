@@ -12,7 +12,7 @@ A modern **web application** built with **Next.js 15** and **React 19**, utilizi
 
 ## About The Project
 
-**Next.js Monal** is a modern and responsive web application built with **Next.js** for server-side rendering (SSR) and **React** for building dynamic user interfaces. The project integrates popular libraries like **TailwindCSS** for a clean and responsive design, **Axios** for HTTP requests, and **FontAwesome** for beautiful icons. This application focuses on providing a performant and scalable solution.
+**Next.js Monal** is a modern and responsive web application built with **Next.js** for static site generation (SSG) and **React** for building dynamic user interfaces. The project integrates popular libraries like **TailwindCSS** for a clean and responsive design, **Axios** for HTTP requests, and **FontAwesome** for beautiful icons. This application focuses on providing a performant and scalable solution.
 
 ### Important Disclaimer
 
@@ -25,7 +25,7 @@ For the most up-to-date information and features regarding Monal, please visit t
 
 ### Features
 
-- **SSR (Server-Side Rendering)**: Powered by **Next.js 15** for fast page loads and great SEO performance.
+- **SSG (Static Site Generation)**: Powered by **Next.js 15** for fast page loads and great SEO performance.
 - **Responsive UI**: Built with **TailwindCSS** for a mobile-first, flexible design.
 - **Icons and UI components**: Integrates **FontAwesome** and **Heroicons** for dynamic and beautiful icons.
 - **HTTP Requests**: Uses **Axios** for handling asynchronous API requests.
@@ -34,7 +34,7 @@ For the most up-to-date information and features regarding Monal, please visit t
 
 ## Built With
 
-- **Next.js 15** (for server-side rendering and optimized builds)
+- **Next.js 15** (for seo optimized builds)
 - **React 19** (JavaScript library for building user interfaces)
 - **TailwindCSS** (for utility-first, responsive design)
 - **Axios** (for making HTTP requests)
@@ -47,7 +47,7 @@ For the most up-to-date information and features regarding Monal, please visit t
 
 Building **Next.js Monal** allowed me to improve my skills in:
 
-- **Server-Side Rendering (SSR)** with **Next.js 15** for better SEO and page load performance.
+- **Static Site Generation (SSG)** with **Next.js 15** for better SEO and page load performance.
 - Using **Axios** for efficient API calls and managing asynchronous data fetching.
 - Developing responsive user interfaces with **TailwindCSS**.
 - Incorporating **FontAwesome** icons into a modern UI.

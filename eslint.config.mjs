@@ -16,7 +16,6 @@ const eslintConfig = async () => {
       plugins: {
         import: (await import('eslint-plugin-import')).default,
         'unused-imports': (await import('eslint-plugin-unused-imports')).default,
-        'simple-import-sort': (await import('eslint-plugin-simple-import-sort')).default,
         security: (await import('eslint-plugin-security')).default,
       },
       rules: {
@@ -27,8 +26,6 @@ const eslintConfig = async () => {
           },
         ],
         'import/order': ['error', { alphabetize: { order: 'asc' } }],
-        'simple-import-sort/imports': 'error',
-        'simple-import-sort/exports': 'error',
         'unused-imports/no-unused-imports': 'error',
         'security/detect-object-injection': 'warn',
         'react/react-in-jsx-scope': 'off',
