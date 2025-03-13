@@ -29,37 +29,37 @@ const Profile = () => {
           <FontAwesomeIcon icon={faGithub} height={32} />
         </a>
         <a
-          href="https://github.com/monal-im/monal"
+          href="mailto:info@monal-im.org"
           target="_blank"
           rel="noopener noreferrer"
-          title="Github"
+          title="Email"
           className="hover:text-blue-500"
         >
           <FontAwesomeIcon icon={faEnvelope} height={32} />
         </a>
         <a
-          href="https://github.com/monal-im/monal"
+          href="https://liberapay.com/tmolitor"
           target="_blank"
           rel="noopener noreferrer"
-          title="Github"
+          title="Librepay"
           className="hover:text-blue-500"
         >
           <FontAwesomeIcon icon={faHandHoldingDollar} height={32} />
         </a>
         <a
-          href="https://github.com/monal-im/monal"
+          href="https://fosstodon.org/@Monal"
           target="_blank"
           rel="noopener noreferrer"
-          title="Github"
+          title="Mastadon"
           className="hover:text-blue-500"
         >
           <FontAwesomeIcon icon={faMastodon} height={32} />
         </a>
         <a
-          href="https://github.com/monal-im/monal"
+          href="https://monal-im.org/index.xml"
           target="_blank"
           rel="noopener noreferrer"
-          title="Github"
+          title="RSS"
           className="hover:text-blue-500"
         >
           <FontAwesomeIcon icon={faSquareRss} height={32} />

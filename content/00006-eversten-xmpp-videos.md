@@ -1,9 +1,7 @@
 ---
-title: "XMPP Tutorials"
+title: 'XMPP Tutorials'
 date: 2023-04-19
-
-tags: []
-author: "Thilo Molitor"
+author: 'Thilo Molitor'
 ---
 
 Axel Reimer recently created some good video tutorials about Monal and XMPP in general.

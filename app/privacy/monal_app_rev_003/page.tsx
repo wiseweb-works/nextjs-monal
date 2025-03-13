@@ -94,7 +94,14 @@ const page = () => {
         </ul>
         <p>
           <b>Note:</b> Our previously used US push region was unfortunately shutdown{' '}
-          <u>due to fosshost ceasing operation.</u>
+          <a
+            href="https://fosshost.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            due to fosshost ceasing operation.
+          </a>
         </p>
         <h3 className="text-2xl font-bold my-4 text-start">How to change push region</h3>
         <blockquote className="border-l-4 border-l-black-500 pl-4 py-2 my-2">
@@ -201,11 +208,28 @@ const page = () => {
           <h3 className="text-2xl font-bold my-4 text-start">GDPR Subject Access Requests (SAR)</h3>
           <p>
             European GDPR allows users to request a copy of all data retained about them. Starting
-            with Monal 5.2.0 we no longer see your JIDs<u>(username@domain.tld)</u> in our push
-            servers. We therefore are not able to send you retained data related to your JID. We
-            furthermore are unable to provide your retained data related to your unique push token
-            because we have no way to verify that Apple issued you a provided token. If you have
-            questions regarding GDPR, please send us a mail to <u>info@monal-im.org</u>.
+            with Monal 5.2.0 we no longer see your JIDs
+            <a
+              href="mailto:username@domain.tld"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              (username@domain.tld)
+            </a>{' '}
+            in our push servers. We therefore are not able to send you retained data related to your
+            JID. We furthermore are unable to provide your retained data related to your unique push
+            token because we have no way to verify that Apple issued you a provided token. If you
+            have questions regarding GDPR, please send us a mail to{' '}
+            <a
+              href="mailto:info@monal-im.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              info@monal-im.org
+            </a>
+            .
           </p>
         </div>
       </div>

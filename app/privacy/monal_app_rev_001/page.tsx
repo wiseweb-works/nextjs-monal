@@ -81,10 +81,18 @@ const page = () => {
         <h3 className="text-2xl font-bold my-4 text-start">GDPR Subject Access Requests (SAR)</h3>
         <p>
           European GDPR allows users to request a copy of all data retained about them. Please send
-          GDPR requests to <u>info@monal-im.org</u>. As by GDPR we need to validate your JID before
-          answering to your inquiry. Therefore, we will provide you a JID you must send a
-          confirmation to, before we can answer your request and send you all retained data related
-          to your JID.
+          GDPR requests to{' '}
+          <a
+            href="mailto:info@monal-im.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            info@monal-im.org
+          </a>
+          . As by GDPR we need to validate your JID before answering to your inquiry. Therefore, we
+          will provide you a JID you must send a confirmation to, before we can answer your request
+          and send you all retained data related to your JID.
         </p>
       </div>
     </article>

@@ -10,13 +10,29 @@ const MainArticle = () => {
           client for these platforms just like the app Conversations IM is for Android. XMPP in
           general is an open and standardized protocol for real time communication. Anyone can host
           their own server and communicate freely with each other, just like with email and just
-          like email the used addresses are of the form <u>“user@domain.tld”.</u>
+          like email the used addresses are of the form{' '}
+          <a
+            href="mailto:username@domain.tld"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            “user@domain.tld”.
+          </a>
           The user can use different apps and services, such as Monal, from a single but also
           multiple accounts. This serves a decentral and sovereign infrastructure and digital
           communication on the internet but also offers many potential for innovation. The chat
           client for iOS and macOS involves implementing various XEP standards (XMPP extension
           protocols, adding modern functionality to the XMPP-core and XMPP-im RFCs, see{' '}
-          <u>XMPP Extensions</u>).
+          <a
+            href="https://xmpp.org/extensions/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            XMPP Extensions
+          </a>
+          ).
         </p>
         <div className="flex space-x-4 mt-4">
           <div className="w-1/3">
@@ -25,6 +41,7 @@ const MainArticle = () => {
               alt="Image 1"
               sizes="100vw"
               style={{
+                maxWidth: '300px',
                 width: '100%',
                 height: 'auto',
               }}
@@ -38,6 +55,7 @@ const MainArticle = () => {
               alt="Image 2"
               sizes="100vw"
               style={{
+                maxWidth: '300px',
                 width: '100%',
                 height: 'auto',
               }}
@@ -51,6 +69,7 @@ const MainArticle = () => {
               alt="Image 3"
               sizes="100vw"
               style={{
+                maxWidth: '300px',
                 width: '100%',
                 height: 'auto',
               }}
@@ -104,7 +123,14 @@ const MainArticle = () => {
           infrastructure.
         </p>
         <p className="text-start">
-          <u>Find the development on GitHub!</u>
+          <a
+            href="https://github.com/monal-im/Monal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            Find the development on GitHub!
+          </a>
         </p>
       </div>
     </article>

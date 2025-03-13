@@ -1,24 +1,25 @@
 ---
-title: "Monal Internals - Handlers framework"
+title: 'Monal Internals - Handlers framework'
 date: 2023-07-12
-
-tags: []
-author: "Thilo Molitor"
+author: 'Thilo Molitor'
 ---
 
 In this new series, I want to shine some light onto specific parts of Monal's internals. It's dedicated to programmers or people curious about how Monal works internally.
 If you want to give some feedback, feel free to send an email to [thilo@monal-im.org](mailto:thilo@monal-im.org)
 
 **Other articles in this series:**
-- [Monal Internals - XML Query Language](00014-monal-internals-xml-query-language)
+
+- [Monal Internals - XML Query Language](/blog/00014-monal-internals-xml-query-language)
 
 # Handlers
-Handlers in Monal are something like serializable callbacks. 
+
+Handlers in Monal are something like serializable callbacks.
 In iOS the app can get frozen or even killed any time and the push implementation requires the complete app state to frequently
 transition between the Main App and the Notification Service App Extension (NSE). Using normal callbacks (called blocks in ObjC)
 is not possible because blocks are not serializable which means they could not survive an app kill or transition to / from the NSE.
 
 Short overview:
+
 - Simple generalized concept usable throughout the app
 - Leverages dynamic language features of ObjC
 - "Serializable callbacks" to class / instance methods of ObjC classes
@@ -30,6 +31,7 @@ Short overview:
 ## Usage description with examples
 
 ### Define handler method
+
 This will be a static class method and doesn't have to be declared in any
 interface to be usable. The argument number or order does not matter,
 feel free to reorder or even remove arguments you don't need.
@@ -60,13 +62,16 @@ $$
 ```
 
 ### Call defined handlers
+
 Calling a defined handler is simple, just create a handler object using `$newHandler()` and `$call()` it.
+
 ```objc
 MLHandler* h = $newHandler(ClassName, myHandlerName);
 $call(h);
 ```
 
 ### Bind variables when creating a handler
+
 You can bind variables to MLHandler objects when creating them and when
 invoking them. Variables supplied on invocation overwrite variables
 supplied when creating the handler if the names are equal.
@@ -84,10 +89,12 @@ $call(h, $ID(account), $ID(otherAccountVarWithSameValue, account))
 ```
 
 ### Usable shortcuts to create MLHandler objects:
-  - `$newHandler(ClassName, handlerName, boundArgs...)`
-  - `$newHandlerWithInvalidation(ClassName, handlerName, invalidationHandlerName, boundArgs...)`
+
+- `$newHandler(ClassName, handlerName, boundArgs...)`
+- `$newHandlerWithInvalidation(ClassName, handlerName, invalidationHandlerName, boundArgs...)`
 
 ### Using invalidation handlers
+
 You can add an invalidation method to a handler when creating the
 MLHandler object (after invalidating a handler you can not call or
 invalidate it again!). Invalidation handlers can be instance handlers or static handlers,
@@ -118,19 +125,22 @@ $invalidate(h, $BOOL(done, YES))
 ```
 
 ### Available data types
+
 The following datatypes can be bound to a handler defining them using the corresponding definitions having either the `$$` or `$_` prefix.
 If the single argument binding is used, the value is bound using the same name like the var the value is coming from (in this example: name).
-* define: `$$ID(NSObject*, name)`, `$_ID(NSObject*, name)`, bind: `$ID(name)`, `$ID(name, value)`
-* define: `$$HANDLER(name)`, `$_HANDLER(name)`, bind: `$HANDLER(name)`, `$HANDLER(name, value)`
-* define: `$$BOOL(name)`, bind: `$BOOL(name)`, `$BOOL(name, value)`
-* define: `$$INT(name)`, bind: `$INT(name)`, `$INT(name, value)`
-* define: `$$DOUBLE(name)`, bind: `$DOUBLE(name)`, `$DOUBLE(name, value)`
-* define: `$$INTEGER(name)`, bind: `$INTEGER(name)`, `$INTEGER(name, value)`, _this corresponds to the NSInteger type alias_
-* define: `$$UINTEGER(name)`, bind: `$UINTEGER(name)`, `$UINTEGER(name, value)`, _this corresponds to the NSUInteger type alias_
+
+- define: `$$ID(NSObject*, name)`, `$_ID(NSObject*, name)`, bind: `$ID(name)`, `$ID(name, value)`
+- define: `$$HANDLER(name)`, `$_HANDLER(name)`, bind: `$HANDLER(name)`, `$HANDLER(name, value)`
+- define: `$$BOOL(name)`, bind: `$BOOL(name)`, `$BOOL(name, value)`
+- define: `$$INT(name)`, bind: `$INT(name)`, `$INT(name, value)`
+- define: `$$DOUBLE(name)`, bind: `$DOUBLE(name)`, `$DOUBLE(name, value)`
+- define: `$$INTEGER(name)`, bind: `$INTEGER(name)`, `$INTEGER(name, value)`, _this corresponds to the NSInteger type alias_
+- define: `$$UINTEGER(name)`, bind: `$UINTEGER(name)`, `$UINTEGER(name, value)`, _this corresponds to the NSUInteger type alias_
 
 ## Code examples found in the wild
 
 ### Enabling carbons
+
 ```objc
 if([features containsObject:@"urn:xmpp:carbons:2"])
 {
@@ -158,6 +168,7 @@ $$
 ```
 
 ### Fetching OMEMO bundles
+
 ```objc
 NSString* bundleNode = [NSString stringWithFormat:@"eu.siacs.conversations.axolotl.bundles:%@", deviceid];
 [self.account.pubsub fetchNode:bundleNode from:jid withItemsList:nil andHandler:$newHandler(self, handleBundleFetchResult, $ID(rid, deviceid))];

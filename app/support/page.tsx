@@ -7,10 +7,26 @@ const page = () => {
       <div className="prose dark:prose-dark text-justify text-lg">
         <ul className="list-inside list-disc my-4">
           <li>
-            Monal Support Channel (XMPP MUC): <u>monal@chat.yax.im</u>
+            Monal Support Channel (XMPP MUC):{' '}
+            <a
+              href="xmpp:monal@chat.yax.im"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              monal@chat.yax.im
+            </a>
           </li>
           <li>
-            Github Tickets: <u>https://github.com/monal-im/Monal/issues</u>
+            Github Tickets:{' '}
+            <a
+              href="https://github.com/monal-im/Monal/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              https://github.com/monal-im/Monal/issues
+            </a>
           </li>
           <li>Email: info[at]monal[minus]im[dot]org.</li>
         </ul>
@@ -26,18 +42,50 @@ const page = () => {
         </p>
         <ul className="list-inside list-disc my-4">
           <li>
-            Donate via <u>Github Sponsors</u>
+            Donate via{' '}
+            <a
+              href="https://github.com/sponsors/tmolitor-stud-tu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              Github Sponsors
+            </a>
           </li>
           <li>
-            Donate via <u>Libera Pay</u>
+            Donate via{' '}
+            <a
+              href="https://liberapay.com/tmolitor"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              Libera Pay
+            </a>
           </li>
           <li>EU citizens can donate via SEPA, too. IBAN: [REDACTED]</li>
         </ul>
         <p>
-          Here you can read about <u>further support of development!</u>
+          Here you can read about{' '}
+          <a
+            href="https://github.com/monal-im/Monal/issues/363"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            further support of development!
+          </a>
         </p>
         <p className="my-4">
-          Find general information in the <u>Monal Wiki.</u>
+          Find general information in the{' '}
+          <a
+            href="https://github.com/monal-im/Monal/wiki"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            Monal Wiki.
+          </a>
         </p>
       </div>
       <h2 className="text-4xl font-bold my-4 text-start">Translations</h2>
@@ -45,15 +93,37 @@ const page = () => {
         <p> Appstore metadata can be translated:</p>
         <ul className="list-inside list-disc my-4">
           <li>
-            <u>Instructions for Monal</u>
+            <a
+              href="https://github.com/monal-im/Monal/tree/develop/appstore_metadata"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              Instructions for Monal
+            </a>
           </li>
           <li>
-            <u>Instructions for Quicksy.</u>
+            <a
+              href="https://github.com/monal-im/Monal/tree/develop/appstore_quicksy_metadata"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              Instructions for Quicksy.
+            </a>
           </li>
         </ul>
         <p>
-          Translations of the app itself are hosted and managed via <u>Weblate</u>. Feel free to
-          translate Monal to your language!
+          Translations of the app itself are hosted and managed via{' '}
+          <a
+            href="https://hosted.weblate.org/engage/monal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            Weblate
+          </a>
+          . Feel free to translate Monal to your language!
         </p>
         <Image
           src="https://hosted.weblate.org/widget/monal/multi-auto.svg"

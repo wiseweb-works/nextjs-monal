@@ -1,9 +1,7 @@
 ---
-title: "Publications moved"
+title: 'Publications moved'
 date: 2024-01-03
-
-tags: []
-author: "Thilo Molitor"
+author: 'Thilo Molitor'
 ---
 
 It came to light that our publications previously linked in a section under [About](/about) were not that discoverable.

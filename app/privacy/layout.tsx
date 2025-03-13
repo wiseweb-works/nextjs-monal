@@ -12,7 +12,15 @@ export default function PrivacyLayout({ children }: { children: React.ReactNode 
       <h2 className="text-3xl font-bold my-4 text-start">Monal Website</h2>
       <div className="prose dark:prose-dark text-justify text-lg">
         <p>
-          You can find our latest privacy policy for our website here: <u>Website Privacy Policy</u>
+          You can find our latest privacy policy for our website here:{' '}
+          <a
+            href="https://monal-im.org/privacyarchive/monal_website/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            Website Privacy Policy
+          </a>
         </p>
       </div>
       <h2 className="text-3xl font-bold my-4 text-start">Monal App</h2>

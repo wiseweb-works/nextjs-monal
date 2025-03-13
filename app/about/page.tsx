@@ -26,7 +26,15 @@ const page = () => {
       <h2 className="text-4xl font-bold my-4 text-start">Monal Team</h2>
       <div className="prose dark:prose-dark text-justify text-lg">
         <p>
-          <b>Thilo Molitor</b> - <u>About me on wiki.xmpp.org</u>
+          <b>Thilo Molitor</b> -{' '}
+          <a
+            href="https://wiki.xmpp.org/web/User:TMolitor"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 dark:text-blue-400"
+          >
+            About me on wiki.xmpp.org
+          </a>
         </p>
       </div>
     </article>

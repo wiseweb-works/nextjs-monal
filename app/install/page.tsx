@@ -18,32 +18,83 @@ const page = () => {
             <tr className="border-b hover:bg-gray-100">
               <td className="px-4 py-2 border">Stable</td>
               <td className="px-4 py-2 border">
-                <u>App Store</u>
+                <a
+                  href="https://apps.apple.com/app/id317711500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 dark:text-blue-400"
+                >
+                  App Store
+                </a>
               </td>
               <td className="px-4 py-2 border">
-                <u>App Store</u>
+                <a
+                  href="https://apps.apple.com/app/id1637078500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 dark:text-blue-400"
+                >
+                  App Store
+                </a>
               </td>
               <td className="px-4 py-2 border">brew install --cask monal</td>
             </tr>
             <tr className="border-b hover:bg-gray-100">
               <td className="px-4 py-2 border">Beta</td>
               <td className="px-4 py-2 border">
-                <u>Testflight Invitation</u>
+                <a
+                  href="https://testflight.apple.com/join/lLLlgHpB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 dark:text-blue-400"
+                >
+                  Testflight Invitation
+                </a>
               </td>
               <td className="px-4 py-2 border">
-                <u>Testflight Invitation</u>
+                <a
+                  href="https://testflight.apple.com/join/tGH2m5vf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 dark:text-blue-400"
+                >
+                  Testflight Invitation
+                </a>
               </td>
               <td className="px-4 py-2 border">brew install --cask monal@beta</td>
             </tr>
             <tr className="border-b hover:bg-gray-100">
               <td className="px-4 py-2 border">Alpha</td>
               <td className="px-4 py-2 border">
-                upon request to <u>info@monal-im.org</u> Then download from our
-                <u>alpha download site</u>
+                upon request to{' '}
+                <a
+                  href="mailto:info@monal-im.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 dark:text-blue-400"
+                >
+                  info@monal-im.org
+                </a>{' '}
+                Then download from our
+                <a
+                  href="https://downloads.monal-im.org/monal-im/alpha/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 dark:text-blue-400"
+                >
+                  alpha download site
+                </a>
                 <br />
                 <br />
                 You can get updates about alpha releases by joining this channel:
-                <u>monal-alpha@chat.yax.im</u>
+                <a
+                  href="xmpp:monal-alpha@chat.yax.im?join"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 dark:text-blue-400"
+                >
+                  monal-alpha@chat.yax.im
+                </a>
               </td>
               <td className="px-4 py-2 border"></td>
               <td className="px-4 py-2 border">
@@ -51,7 +102,14 @@ const page = () => {
                 <br />
                 <br />
                 You can get updates about alpha releases by joining this channel:
-                <u>monal-alpha@chat.yax.im</u>
+                <a
+                  href="xmpp:monal-alpha@chat.yax.im?join"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 dark:text-blue-400"
+                >
+                  monal-alpha@chat.yax.im
+                </a>
               </td>
             </tr>
           </tbody>

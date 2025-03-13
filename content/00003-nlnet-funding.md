@@ -1,9 +1,7 @@
 ---
-title: "NLNet Funding"
+title: 'NLNet Funding'
 date: 2022-09-11
-
-tags: []
-author: "Monal"
+author: 'Monal'
 ---
 
 We are pleased to announce that we got funding by the EU’s [NGI Assure via the NLnet Foundation](https://nlnet.nl/assure/) to work on some important features in Monal.
@@ -56,4 +54,3 @@ containing the hash of all server-advertised SASL mechanisms and channel-binding
 will enable the server to check if any downgrade took place and to abort the authentication, if so. Because the
 SCRAM attribute will be part of the mutual authentication between client and server, a MITM will not be able to
 forge it.
-

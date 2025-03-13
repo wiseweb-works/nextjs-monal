@@ -1,10 +1,9 @@
 ---
-title: "Insights Into Monal Development"
+title: 'Insights Into Monal Development'
 date: 2022-03-07
-
-tags: []
-author: "Monal"
+author: 'Monal'
 ---
+
 > TLDR:
 >
 > _Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!  
@@ -28,20 +27,20 @@ With this transition we would like to improve the accessibility of the app as we
 
 Task:
 
-*   Add new MUC creation and management UI
-*   Port the chat view
-*   Finish contact Details
-    *   List group chat (MUC) participants
-    *   Display OMEMO encryption fingerprints for verification
-*   Port our settings
-*   Port all other remaining views
+- Add new MUC creation and management UI
+- Port the chat view
+- Finish contact Details
+  - List group chat (MUC) participants
+  - Display OMEMO encryption fingerprints for verification
+- Port our settings
+- Port all other remaining views
 
 Qualifications:
 
-*   General knowledge around SwiftUI (iOS and Catalyst)
-*   Interest in improving a (XMPP) chat client
-*   Optional, but preferred: Some experience with XMPP (e.g. some weeks, or maybe months of usage of Monal or any other “modern” XMPP client)
-*   Optional: Experience in designing inclusive / accessible UI
+- General knowledge around SwiftUI (iOS and Catalyst)
+- Interest in improving a (XMPP) chat client
+- Optional, but preferred: Some experience with XMPP (e.g. some weeks, or maybe months of usage of Monal or any other “modern” XMPP client)
+- Optional: Experience in designing inclusive / accessible UI
 
 #### Website
 
@@ -51,8 +50,8 @@ If you have some spare time, and you are a skilled in creating websites with Hug
 
 Requirements:
 
-*   Simple design nothing too fancy
-*   Privacy by design → No analytics, no external CSS, jss, … usage
+- Simple design nothing too fancy
+- Privacy by design → No analytics, no external CSS, jss, … usage
 
 #### OMEMO Encryption in Group Chat (MUC)
 
@@ -88,14 +87,13 @@ Many clients such as Conversations and Dino support audio and video calls, so Mo
 
 Our user group on iOS 12, iOS 13 as well as macOS Catalina has decreased in last years while the resources needed to maintain these old platforms increased. We therefore decided to focus on newer iOS versions and drop the old ones. The next stable release will only be supported on iOS 14 and higher and macOS Big Sur and higher. We are still unsure how long we will support iOS 14, as most of the devices also support iOS15.
 
-Donations and Support
----------------------
+## Donations and Support
 
 Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers need to keep up service costs and development in the future! Please consider giving a bit back for the hard work which has been conducted. Currently, there are three ways to financially support the Monal development:
 
-*   Donate via [GitHub Sponsors](https://github.com/sponsors/tmolitor-stud-tu)
-*   Donate via [Libera Pay](https://liberapay.com/tmolitor)
-*   EU citizens can donate via SEPA, too. Just contact Thilo Molitor via mail to [info@monal-im.org](mailto:info@monal-im.org) to get his IBAN.
+- Donate via [GitHub Sponsors](https://github.com/sponsors/tmolitor-stud-tu)
+- Donate via [Libera Pay](https://liberapay.com/tmolitor)
+- EU citizens can donate via SEPA, too. Just contact Thilo Molitor via mail to [info@monal-im.org](mailto:info@monal-im.org) to get his IBAN.
 
 Here you can read about further [support of the development](https://github.com/monal-im/Monal/issues/363)! Find general information in the [Monal Wiki](https://github.com/monal-im/Monal/wiki).
 
