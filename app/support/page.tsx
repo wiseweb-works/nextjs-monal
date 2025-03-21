@@ -136,9 +136,10 @@ const page = () => {
       <h2 className="text-4xl font-bold my-4 text-start">Reporting a Vulnerability</h2>
       <div className="prose dark:prose-dark text-justify text-lg">
         <p>
-          It is highly appreciated reporting a vulnerability to the Monal developers. We ask you for
-          disclosure until it has been fixed. This prevents abuse and exploitation in the current
-          published releases. Please report issues directly to info[at]monal[minus]im[dot]org.
+          It is highly appreciated reporting a vulnerability to the Monal developers. We ask you to
+          not disclose it to the public until the vulnerability has been fixed. This prevents abuse
+          and exploitation in the current published releases. Please report issues directly to
+          info[at]monal[minus]im[dot]org.
         </p>
         <p>Please try to report</p>
         <ul className="list-inside list-disc my-4">
