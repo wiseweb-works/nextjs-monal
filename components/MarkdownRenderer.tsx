@@ -12,9 +12,10 @@ const MarkdownRenderer = ({ content }: { content: string }) => {
       components={{
         img: ({ src, alt }) => {
           if (!src) return null;
+          const imgSrc = typeof src === 'string' ? src : URL.createObjectURL(src);
           return (
             <Image
-              src={src}
+              src={imgSrc}
               alt={alt || 'Markdown Image'}
               width={300}
               height={300}
