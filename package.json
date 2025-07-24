@@ -14,12 +14,12 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@headlessui/react": "^2.2.4",
+    "@fortawesome/react-fontawesome": "^0.2.3",
+    "@headlessui/react": "^2.2.6",
     "@heroicons/react": "^2.2.0",
-    "axios": "^1.10.0",
+    "axios": "^1.11.0",
     "gray-matter": "^4.0.3",
-    "next": "15.3.4",
+    "next": "15.4.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",
@@ -29,26 +29,21 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@tailwindcss/postcss": "^4.1.10",
-    "@types/node": "^24.0.3",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^24.1.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@types/xml2js": "^0.4.14",
-    "eslint": "^9.29.0",
-    "eslint-config-next": "15.3.4",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-prettier": "^5.5.0",
+    "eslint": "^9.31.0",
+    "eslint-config-next": "15.4.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.3",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "postcss": "^8.5.6",
-    "prettier": "^3.5.3",
-    "tailwindcss": "^4.1.10",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "sharp"
-    ]
   }
 }
