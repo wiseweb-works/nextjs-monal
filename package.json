@@ -20,7 +20,7 @@
     "@heroicons/react": "^2.2.0",
     "axios": "^1.13.2",
     "gray-matter": "^4.0.3",
-    "next": "16.0.7",
+    "next": "16.0.9",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-markdown": "^10.1.0",
