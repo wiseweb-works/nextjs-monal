@@ -7,6 +7,7 @@ export interface PostMetadata {
 }
 
 export interface Post {
+  fileName: string;
   id: string;
   slug: string;
   content: string;
