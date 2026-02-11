@@ -1,10 +1,14 @@
+export interface PostMetadata {
+  title: string;
+  description: string;
+  author: string;
+  date: string;
+  tags?: string[];
+}
+
 export interface Post {
-  fileName: string;
+  id: string;
+  slug: string;
   content: string;
-  metadata: {
-    title?: string;
-    date: string;
-    author: string;
-    [key: string]: any;
-  };
+  metadata: PostMetadata;
 }
