@@ -18,7 +18,7 @@
     "@fortawesome/react-fontawesome": "^3.1.1",
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
-    "axios": "^1.13.2",
+    "axios": "^1.13.5",
     "gray-matter": "^4.0.3",
     "next": "16.0.10",
     "react": "^19.2.3",
