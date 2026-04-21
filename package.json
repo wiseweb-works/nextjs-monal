@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "bun --bun next dev",
-    "build": "bun --bun next build",
-    "start": "bun --bun next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "eslint .",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
@@ -35,7 +35,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@types/xml2js": "^0.4.14",
-    "eslint": "9",
+    "eslint": "^9.39.4",
     "eslint-config-next": "16.2.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
@@ -46,9 +46,5 @@
     "prettier": "^3.8.2",
     "tailwindcss": "^4.2.2",
     "typescript": "^6.0.2"
-  },
-  "overrides": {
-    "brace-expansion": ">=1.1.13",
-    "picomatch": ">=2.3.2"
   }
 }
